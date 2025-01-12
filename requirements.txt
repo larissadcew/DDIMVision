@@ -1,0 +1,6 @@
+math
+torch
+torchvision
+pathlib2
+tqdm
+numpy
