@@ -61,4 +61,4 @@ python generate.py -cp "checkpoint/cifar10.pth" -bs 256 --show -sp "data/result/
 
 Example of generated image:
 
-![](data/result/cifar10_result.png)
+![](data/result/cifar10_sampler.png)
