@@ -31,13 +31,13 @@ Execute `generate.py` com os seguintes parâmetros:
 - `--method`: Método de amostragem ('linear' ou 'quadratic')
 - `--to_grayscale`: Converter para escala de cinza (padrão: False)
 
-## Exemplos Práticos
+##Exemplos Práticos
 
 
 ```bash
 python generate.py -cp "checkpoint/cifar10.pth" -bs 16 --interval 10 --show -sp "data/result/cifar10_sampler.png" --sampler "ddim" --steps 200 --method "quadratic"
 
-
+```
 Example of generated image:
 
 ![](data/result/cifar10_sampler.png)
