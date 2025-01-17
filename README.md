@@ -33,12 +33,17 @@ Execute `generate.py` com os seguintes parâmetros:
 
 ## Exemplos Práticos
 
+### Para gerar múltiplas imagens:
+```bash
+python generate.py -cp "checkpoint/mnist.pth" -bs 256 --show -sp "data/result/mnist_result.png" --nrow 16 --result_only --sampler "ddim" --steps 50
+
 ### MNIST
 [Baixar checkpoint](https://drive.google.com/file/d/1gwhczBWOjUtw4Fz_y2PidyKnrUsMSN8t/view?usp=drive_link)
 
-Para gerar o processo de amostragem:
+##Para gerar o processo de amostragem:
 ```bash
-python generate.py -cp "checkpoint/mnist.pth" -bs 16 --interval 3 --show -sp "data/result/mnist_sampler.png" --sampler "ddim" --steps 50
+python generate.py -cp "checkpoint/cifar10.pth" -bs 16 --interval 10 --show -sp "data/result/cifar10_sampler.png" --sampler "ddim" --steps 200 --method "quadratic"
+
 
 Example of generated image:
 
